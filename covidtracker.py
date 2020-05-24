@@ -17,7 +17,7 @@ obj=json.dumps(data,indent=2)
 print("World Update")
 print(obj)
 while True:
-	choose=input("Did you want more status for other countries? yes/no: ")
+	choose=input("Did you want more status for other countries? yes/no: ").lower()
 	if choose == "yes":
 		print("Check country id number Here")
 		data=covid.list_countries()
